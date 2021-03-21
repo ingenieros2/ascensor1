@@ -1,0 +1,23 @@
+@import 'boostrap';
+
+body {
+    margin: 0;
+    padding: 0;
+
+    .building {
+        width: 625px;
+        height: 600px;
+        background-color: grey;
+    }
+
+    .elevator {
+        height: 100px;
+        width: 100px;
+        background-color: black;
+    }
+
+    img {
+        height: 100px;
+        width: 80%;
+    }
+}
