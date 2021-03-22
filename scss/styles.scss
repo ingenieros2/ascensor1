@@ -1,23 +1,21 @@
-@import 'boostrap';
+@import "bootstrap";
 
 body {
     margin: 0;
     padding: 0;
 
     .building {
-        width: 625px;
-        height: 600px;
+        width: 90%;
+        height: 100vh;
         background-color: grey;
     }
 
-    .elevator {
-        height: 100px;
-        width: 100px;
-        background-color: black;
+    img {
+        height: 106px;
+        width: 100%;
     }
 
-    img {
-        height: 100px;
+    .floors {
         width: 80%;
     }
 }
