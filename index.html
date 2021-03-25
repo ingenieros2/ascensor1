@@ -2,29 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elevator</title>
+    <title>Homepage</title>
     <link rel="stylesheet" href="./css/styles.css">
+    
 </head>
 <body>
     <main>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-6 m-0 p-0">
-                    <div class="building d-flex flex-column">
-                        <div class="floors"><img src="/img/Floor5.png" alt=""></div>
-                        <div class="floors"><img src="/img/Floor4.png" alt=""></div>
-                        <div class="floors"><img src="/img/Floor3.png" alt=""></div>
-                        <div class="floors"><img src="/img/Floor2.png" alt=""></div>
-                        <div class="floors"><img src="/img/Floor1.png" alt=""></div>
-                        <div class="floors"><img src="/img/Floor0.png" alt=""></div>
+        <div id="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Genera tu ascensor manito</h1>
+                        <label for="Edificio" >Ingrese la cantidad de pisos</label>
+                        <input type="number" id="number" class="border border-primary">
+                        <button class="btn-primary btn" onclick="generateLayout()">Generar</button>
                     </div>
-                </div>
-                <div class="col-6 bg-dark m-0 p-0">
-
                 </div>
             </div>
         </div>
     </main>
+    <script src="./js/Building.js"></script>
+    <script src="./js/app.js"></script>
 </body>
+
 </html>
