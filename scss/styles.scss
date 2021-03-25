@@ -1,19 +1,24 @@
-@import 'boostrap';
+@import 'bootstrap';
 
 body {
     margin: 0;
     padding: 0;
 
     .building {
-        width: 625px;
+        width: 691px;
         height: 600px;
         background-color: grey;
     }
 
-    .elevator {
+    #elevator {
         height: 100px;
-        width: 100px;
-        background-color: black;
+        width: 60px;
+        position: relative;
+        transition: top 2s ease-in-out;
+
+        img {
+            width: 100%;
+        } 
     }
 
     img {
