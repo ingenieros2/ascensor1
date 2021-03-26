@@ -1,16 +1,11 @@
 @import 'bootstrap';
 
 body {
+    background: linear-gradient(to right, #141e30, #243b55);
     margin: 0;
     padding: 0;
 
-    .building {
-        width: 691px;
-        height: 600px;
-        background-color: grey;
-    }
-
-    #elevator {
+    #ascensor {
         height: 100px;
         width: 60px;
         position: relative;
@@ -21,8 +16,27 @@ body {
         } 
     }
 
-    img {
+    input {
+        border: 2px solid #4e4848;
+        outline: none;
+    }
+
+    .color {
+        color: whitesmoke;
+    }
+
+    .edificio {
+        width: 90%;
+        background: #333436;
+
+        img {
+            height: 100px;
+            width: 100%;
+        }
+    }
+
+
+    .pisos {
         height: 100px;
-        width: 80%;
     }
 }

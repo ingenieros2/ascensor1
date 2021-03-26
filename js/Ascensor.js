@@ -10,7 +10,7 @@ class Ascensor {
     }
 
     moverAscensor () {
-        var ascensor = document.getElementById('elevator');
+        var ascensor = document.getElementById('ascensor');
         var siguientePiso = this.filaLlamadas[0];
         var posicion = (this.cantidadPisos * 100) - (siguientePiso * 100) - 100; 
         ascensor.style.top = `${posicion}px`;
