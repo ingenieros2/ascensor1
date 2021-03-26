@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Ascensor</title>
     <link rel="stylesheet" href="./css/styles.css">
     
 </head>
 <body>
     <main>
-        <div id="content">
+        <div id="contenido">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                        <h1>Genera tu ascensor manito</h1>
-                        <label for="Edificio" >Ingrese la cantidad de pisos</label>
-                        <input type="number" id="number" class="border border-primary">
-                        <button class="btn-primary btn" onclick="generateLayout()">Generar</button>
+                    <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+                        <h1 class="color mt-5">Genera tu ascensor manito</h1>
+                        <label class="color mt-4"  for="Edificio" >Ingrese la cantidad de pisos</label>
+                        <input type="number" id="numero" class="mt-4">
+                        <button class="btn-primary btn mt-4" onclick="generarLayout()">Generar</button>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <script src="./js/Building.js"></script>
+    <script src="./js/Edificio.js"></script>
     <script src="./js/app.js"></script>
 </body>
 
