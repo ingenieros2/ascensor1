@@ -7,7 +7,7 @@ class Edificio {
         this.pisos = [];
         for (var i = 0; i < cantidadDePisos ; i++) {
             var numeroDeImagenes = Math.floor(Math.random()*8);
-            this.pisos.push(`<div class="pisos"><img src="/img/Piso${numeroDeImagenes}.png" alt=""></div>`);
+            this.pisos.push(`<div class="pisos"><img src="./img/Piso${numeroDeImagenes}.png" alt=""></div>`);
         }
     }
 

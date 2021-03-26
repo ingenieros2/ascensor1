@@ -1,9 +1,20 @@
-@import "bootstrap";
+@import 'bootstrap';
 
 body {
     background: linear-gradient(to right, #141e30, #243b55);
     margin: 0;
     padding: 0;
+
+    #ascensor {
+        height: 100px;
+        width: 60px;
+        position: relative;
+        transition: top 2s ease-in-out;
+
+        img {
+            width: 100%;
+        } 
+    }
 
     input {
         border: 2px solid #4e4848;
@@ -17,14 +28,15 @@ body {
     .edificio {
         width: 90%;
         background: #333436;
+
+        img {
+            height: 100px;
+            width: 100%;
+        }
     }
 
-    img {
-        height: 100px;
-        width: 100%;
-    }
 
     .pisos {
-        width: 80%;
+        height: 100px;
     }
 }
