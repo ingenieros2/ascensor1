@@ -15,6 +15,6 @@ class Ascensor {
         var posicion = (this.cantidadPisos * 100) - (siguientePiso * 100) - 100; 
         ascensor.style.top = `${posicion}px`;
         this.filaLlamadas.splice(0, 1);
-    }
+    } 
 }
 
