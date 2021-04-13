@@ -39,4 +39,63 @@ body {
     .pisos {
         height: 100px;
     }
+
+    .panel { 
+        padding: 2rem;
+        background: lightgray;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-flow: column nowrap;
+        align-items: center;
+        .botonera {
+            display: flex;
+            flex-flow: row wrap;
+            .contenedor-boton {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50%;
+                button {
+                    margin-bottom: 1rem;
+                    border: 2px solid #666666 ;
+                    background: radial-gradient(circle, rgb(231, 231, 231), rgb(144, 144, 144));
+                    height: 100px;
+                    width: 100px;
+                    min-width: 100px;
+                    border-radius: 50%;
+                    font-size: 2.5rem;
+                    color: #666666;
+                    &.active {
+                        box-shadow: 0 0 5px rgba(255, 0, 0, 0.575);
+                        border-color: red;
+                        color: red;
+                    }
+                } 
+            }
+        }
+        .pantalla { 
+            margin-bottom: 1rem;
+            width: 100%;
+            height: 100px;
+            background: black;
+            color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h2 {
+                font-size: 4rem;
+                &.up {
+                    &::before {
+                        content: '▲';
+                    }
+                }
+                &.down {
+                    &::before {
+                        content: '▼';
+                    }
+                }
+            }
+        }
+    }
 }
