@@ -14,13 +14,13 @@ function generarLayout() {
             <div id="edificio" class="edificio">
             
             </div>
-            <div id="ascensor" style="top: 500px;">
+            <div id="ascensor">
                 <img src="./img/ascensor.svg" alt="">
             </div>
         </div>   
         <div class="col-6 bg-dark m-0 p-5">
             <div class="panel">
-                <div class="pantalla">
+                <div class="pantalla" id="pantalla">
                     <h2 class="up">10</h2>
                 </div>
                 <div class="botonera" id="botonera">
@@ -34,5 +34,5 @@ function generarLayout() {
 
     contenido.innerHTML = nuevaVista;
     edificio.generarPisos();
-    
+    edificio.ascensor.iniciarAscensor();
 }
