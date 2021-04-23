@@ -10,18 +10,21 @@ class Boton {
         
     }
 
-    cambiarEstado(estado) {
+    cambiarEstadoBoton(estado) {
+        console.log(this);
         this.activo = estado;
-        var contenedor = document.getElementById(`contenedor-${this.texto}`)
-        contenedor.innerHTML = ` 
+        var contenedor = document.getElementById(`contenedor-${this.id}`);
+        contenedor.innerHTML = `
         <button 
-            class="${this.activo? 'active' : ''}"
-            onclick="edificio.botonera.botones[${this.id}].apretarBoton()"
-        > ${this.texto} </button>`  
+            class="${estado? 'active' : ''}"
+            onclick = "edificio.botonera.apretarBoton(${this.id})"
+        > ${this.texto} </button>`
     }
 
-    apretarBoton(){
-        /* var estado = edificio.ascensor.agregarPiso(this.id) */ 
-        this.cambiarEstado(true);
+    apretarBoton(boton) {
+
+        var estado = edificio.ascensor.agregarPiso(boton.id)
+        this.cambiarEstadoBoton(estado);
     }
+
 }
